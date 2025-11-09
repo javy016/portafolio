@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desarrollo Web - Javier Collado Vinagre</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="proyectos.css">
+        <link rel="icon" type="image/jpg" href="imagenes/logo.jpg">
+    </head>
+
+    <body>
+        <header class="page-header">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="../../index.html">
+                            <img src="../../imagenes/logo.jpg" alt="Logo Javier Collado Vinagre" class="logo-img">
+                            JAVIER COLLADO VINAGRE
+                        </a>
+                    </div>
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="../../index.html">INICIO</a></li>
+                        <li><a href="../../index.html#sobre-mi">SOBRE MÍ</a></li>
+                        <li class="dropdown">
+                            <a href="#proyectos">PROYECTOS <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="desarrollo_web.html" class="active">Desarrollo Web</a></li>
+                                <li><a href="aplicaciones.html">Aplicaciones</a></li>
+                                <li><a href="videojuegos.html">Videojuegos</a></li>
+                                <li><a href="proyectos_futuros.html">Proyectos Futuros</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../habilidades/habilidades.html">HABILIDADES</a></li>
+                        <li><a href="../../documentos/cv.pdf" target="_blank">CV</a></li>
+                        <li><a href="https://javier-collado-vinagre.blogspot.com" target="_blank">BLOG</a></li>
+                        <li><a href="../../index.html#contacto">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="projects-hero">
+            <div class="container">
+                <h1>Desarrollo Web</h1>
+                <p>Proyectos de desarrollo frontend y backend con tecnologías modernas</p>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Proyectos de Desarrollo Web</h2>
+
+                <div class="projects-grid">
+                    <!-- Galería de Imágenes -->
+                    <div class="project-card" data-category="web">
+                        <img src="../../imagenes/p_galeria.png" alt="Galería de Imágenes" class="project-image">
+                        <div class="project-content">
+                            <h2>Galería de Imágenes</h2>
+                            <p>Plataforma web interactiva para visualización y gestión de galerías de imágenes con
+                                filtros y búsqueda avanzada.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>HTML/CSS</span>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://javy016.github.io/hosting" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Ir al Sitio
+                                </a>
+                                <a href="#resumen-galeria" class="btn btn-resumen">
+                                    <i class="fas fa-file-alt"></i> Resumen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Personal -->
+                    <div class="project-card" data-category="web">
+                        <img src="../../imagenes/p_portafolios.jpg" alt="Galería de Imágenes" class="project-image">
+                        <div class="project-content">
+                            <h2>Portfolio Personal</h2>
+                            <p>Sitio web personal responsive con diseño moderno, optimizado para SEO y accesibilidad.
+                                Incluye formulario de contacto funcional y diseño adaptativo.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Express.js</span>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="../../index.html" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Ir al Sitio
+                                </a>
+                                <a href="#resumen-portfolio" class="btn btn-resumen">
+                                    <i class="fas fa-file-alt"></i> Resumen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Tandem Reina -->
+                    <div class="project-card" data-category="web">
+                        <img src="../../imagenes/p_tadem_reina.jpg" alt="Galería de Imágenes" class="project-image">
+                        <div class="project-content">
+                            <h2>Tandem Reina</h2>
+                            <p>Plataforma de acompañamiento para personas mayores en situación de soledad no deseada,
+                                desarrollada como parte de un proyecto social.</p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                                <span>HTML/CSS</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://asociacionapolo.es/proyecto-reina" target="_blank"
+                                    class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Ir al Sitio
+                                </a>
+                                <a href="#resumen-tandem" class="btn btn-resumen">
+                                    <i class="fas fa-file-alt"></i> Resumen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="social-links">
+                    <a href="https://github.com/javy016" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/javier-collado-vinagre" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">© 2025 Javier Collado Vinagre. Todos los derechos reservados.</p>
+                <p class="author">Desarrollado con ❤️ por Javier Collado Vinagre</p>
+            </div>
+        </footer>
+
+        <!-- Modal de Resumen -->
+        <div class="resumen-modal" id="resumen-modal">
+            <div class="resumen-modal-content">
+                <div class="resumen-modal-header">
+                    <h3>Resumen del Proyecto</h3>
+                    <button class="close-resumen-modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="resumen-modal-body">
+                    <!-- El contenido se genera dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <script src="proyectos_scripts.js"></script>
+    </body>
+
+</html>

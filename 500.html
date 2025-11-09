@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Error del Servidor - Javier Collado Vinagre</title>
+        <link rel="icon" type="image/jpg" href="imagenes/logo.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                color: #2c3e50;
+                background: #0f1419;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            header {
+                background: rgba(15, 20, 25, 0.95);
+                backdrop-filter: blur(10px);
+                border-bottom: 1px solid #2a3a4a;
+                padding: 1rem 0;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .logo {
+                display: flex;
+                align-items: center;
+                font-weight: 700;
+                font-size: 1.2rem;
+                color: #ecf0f1;
+                text-decoration: none;
+            }
+
+            .logo-img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 10px;
+                border: 2px solid #3498db;
+            }
+
+            .error-content {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 4rem 0;
+                text-align: center;
+            }
+
+            .error-container {
+                max-width: 600px;
+                padding: 3rem;
+                background: #1a252f;
+                border-radius: 12px;
+                border: 1px solid #34495e;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            }
+
+            .error-icon {
+                font-size: 6rem;
+                color: #e74c3c;
+                margin-bottom: 1.5rem;
+                animation: pulse 2s ease-in-out infinite;
+            }
+
+            @keyframes pulse {
+
+                0%,
+                100% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+            }
+
+            .error-title {
+                font-size: 4rem;
+                font-weight: 700;
+                color: #e74c3c;
+                margin-bottom: 1rem;
+            }
+
+            .error-subtitle {
+                font-size: 1.8rem;
+                color: #ecf0f1;
+                margin-bottom: 1rem;
+            }
+
+            .error-message {
+                font-size: 1.1rem;
+                color: #bdc3c7;
+                margin-bottom: 2.5rem;
+                line-height: 1.6;
+            }
+
+            .btn-primary {
+                display: inline-block;
+                padding: 0.8rem 2rem;
+                background: #3498db;
+                color: white;
+                text-decoration: none;
+                border-radius: 6px;
+                font-weight: 600;
+                font-size: 0.9rem;
+                transition: all 0.3s ease;
+            }
+
+            .btn-primary:hover {
+                background: #2980b9;
+                transform: translateY(-2px);
+            }
+
+            footer {
+                background: #0f1419;
+                color: #bdc3c7;
+                padding: 2rem 0;
+                text-align: center;
+                border-top: 1px solid #2a3a4a;
+            }
+
+            .social-links {
+                display: flex;
+                justify-content: center;
+                gap: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .social-links a {
+                color: #bdc3c7;
+                font-size: 1.3rem;
+                transition: all 0.3s ease;
+                padding: 0.8rem;
+                border-radius: 50%;
+                background: #1a252f;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+            }
+
+            .social-links a:hover {
+                background: #3498db;
+                color: white;
+                transform: translateY(-2px);
+            }
+
+            @media (max-width: 768px) {
+                .error-container {
+                    padding: 2rem;
+                    margin: 0 1rem;
+                }
+
+                .error-title {
+                    font-size: 3rem;
+                }
+
+                .error-subtitle {
+                    font-size: 1.4rem;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                            <img src="imagenes/logo.jpg" alt="Logo Javier Collado Vinagre" class="logo-img">
+                            JAVIER COLLADO VINAGRE
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="error-content">
+            <div class="container">
+                <div class="error-container">
+                    <div class="error-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h1 class="error-title">500</h1>
+                    <h2 class="error-subtitle">Error del Servidor</h2>
+                    <p class="error-message">
+                        Ha ocurrido un error inesperado en el servidor. Por favor, intenta nuevamente más tarde.
+                    </p>
+                    <a href="/" class="btn-primary">
+                        <i class="fas fa-home"></i> Volver al Inicio
+                    </a>
+                    <a href="javascript:location.reload()" class="btn-primary" style="margin-left: 1rem;">
+                        <i class="fas fa-redo"></i> Reintentar
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="social-links">
+                    <a href="https://github.com/javy016" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/javier-collado-vinagre" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">© 2025 Javier Collado Vinagre. Todos los derechos reservados.</p>
+                <p class="author">Desarrollado con ❤️ por Javier Collado Vinagre</p>
+            </div>
+        </footer>
+    </body>
+
+</html>

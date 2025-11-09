@@ -1,0 +1,18 @@
+{
+  "files.associations": {
+    "*.html": "html",
+    "*.js": "javascript",
+    "*.css": "css"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "html"
+  },
+  "html.format.indentInnerHtml": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "css.format.enable": true,
+  "editor.formatOnSave": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}

@@ -1,0 +1,708 @@
+/* Proyectos Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #ecf0f1;
+    background: #0f1419;
+    padding-top: 70px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.page-header {
+    background: rgba(15, 20, 25, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #2a3a4a;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #3498db;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #bdc3c7;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #3498db;
+    background: rgba(52, 152, 219, 0.1);
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1a252f;
+    border: 1px solid #2a3a4a;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.7rem 1.2rem;
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 0;
+    font-size: 0.85rem;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(52, 152, 219, 0.1);
+    color: #3498db;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 2px;
+    background: #ecf0f1;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.projects-hero {
+    background: linear-gradient(135deg, #1a1f2e 0%, #2d3746 100%);
+    color: #ecf0f1;
+    padding: 80px 0 60px;
+    text-align: center;
+    border-bottom: 1px solid #2a3a4a;
+}
+
+.projects-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.projects-hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #95a5a6;
+}
+
+/* Projects Grid */
+.projects-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #ecf0f1;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #2c3e50;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #34495e;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: #3498db;
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #34495e;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-content h2 {
+    font-size: 1.3rem;
+    color: #ecf0f1;
+    margin-bottom: 0.8rem;
+}
+
+.project-content p {
+    color: #bdc3c7;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-tech span {
+    background: #34495e;
+    color: #bdc3c7;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #3498db;
+    border: 1px solid #3498db;
+}
+
+.btn-secondary:hover {
+    background: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-resumen {
+    background: #9b59b6;
+    color: white;
+}
+
+.btn-resumen:hover {
+    background: #8e44ad;
+    transform: translateY(-2px);
+}
+
+/* Modal de Resumen */
+.resumen-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    animation: fadeIn 0.3s ease;
+}
+
+.resumen-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.resumen-modal-content {
+    background: #2c3e50;
+    border-radius: 12px;
+    border: 1px solid #34495e;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resumen-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #34495e;
+    background: #34495e;
+    border-radius: 12px 12px 0 0;
+}
+
+.resumen-modal-header h3 {
+    color: #ecf0f1;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.close-resumen-modal {
+    background: none;
+    border: none;
+    color: #bdc3c7;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-resumen-modal:hover {
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
+}
+
+.resumen-modal-body {
+    padding: 2rem;
+}
+
+.resumen-content h4 {
+    color: #3498db;
+    margin: 1.5rem 0 0.8rem 0;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.resumen-content h4:first-child {
+    margin-top: 0;
+}
+
+.resumen-content p {
+    color: #bdc3c7;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.resumen-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.resumen-feature {
+    background: #34495e;
+    padding: 1.2rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    transition: all 0.3s ease;
+}
+
+.resumen-feature:hover {
+    transform: translateY(-2px);
+    border-left-color: #9b59b6;
+}
+
+.resumen-feature h5 {
+    color: #ecf0f1;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.resumen-feature p {
+    color: #bdc3c7;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.resumen-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 1rem 0;
+}
+
+.resumen-tech span {
+    background: #34495e;
+    color: #bdc3c7;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid #4a5f7a;
+}
+
+.resumen-status {
+    background: #34495e;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #2ecc71;
+    margin: 1.5rem 0;
+}
+
+.resumen-status h5 {
+    color: #ecf0f1;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.resumen-status p {
+    color: #bdc3c7;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* proyectos_futuros.css - Estilos específicos para proyectos futuros */
+
+/* Contenedor del resumen oculto */
+.resumen-oculto {
+    display: none;
+    background: #2c3e50;
+    border-left: 4px solid #3498db;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0 8px 8px 0;
+    border: 1px solid #34495e;
+}
+
+/* Mostrar resumen cuando tenga la clase activa */
+.resumen-oculto.mostrar {
+    display: block;
+    animation: fadeInResumen 0.5s ease-in;
+}
+
+/* Estilos para la lista del resumen */
+.resumen-oculto ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.resumen-oculto li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #34495e;
+    position: relative;
+    padding-left: 1.5rem;
+    color: #bdc3c7;
+    line-height: 1.5;
+}
+
+.resumen-oculto li:last-child {
+    border-bottom: none;
+}
+
+.resumen-oculto li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.resumen-oculto strong {
+    color: #ecf0f1;
+}
+
+.resumen-oculto p {
+    color: #ecf0f1;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Animación para mostrar el resumen */
+@keyframes fadeInResumen {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    background: #0f1419;
+    color: #bdc3c7;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #2a3a4a;
+    margin-top: 4rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    color: #bdc3c7;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    padding: 0.8rem;
+    border-radius: 50%;
+    background: #1a252f;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.copyright {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.author {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: #1a252f;
+        flex-direction: column;
+        padding: 1.5rem;
+        transition: 0.3s;
+        border-top: 1px solid #2a3a4a;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin-top: 0.5rem;
+    }
+
+    .projects-hero h1 {
+        font-size: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-actions {
+        flex-direction: column;
+    }
+
+    .resumen-modal-content {
+        width: 95%;
+        margin: 1rem;
+    }
+
+    .resumen-modal-header {
+        padding: 1rem 1.5rem;
+    }
+
+    .resumen-modal-body {
+        padding: 1.5rem;
+    }
+
+    .resumen-features {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-links a {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+
+    /* Responsive para resumen oculto */
+    .resumen-oculto {
+        padding: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .resumen-oculto li {
+        padding: 0.5rem 0;
+        padding-left: 1.25rem;
+    }
+
+    .btn-resumen {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-hero {
+        padding: 60px 0 40px;
+    }
+
+    .projects-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .project-content {
+        padding: 1rem;
+    }
+
+    .resumen-modal-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .resumen-modal-body {
+        padding: 1rem;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+        padding: 0.6rem;
+    }
+}

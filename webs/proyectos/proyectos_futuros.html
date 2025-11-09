@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyectos Futuros - Javier Collado Vinagre</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="proyectos_futuros.css">
+        <link rel="icon" type="image/jpg" href="imagenes/logo.jpg">
+    </head>
+
+    <body>
+        <header class="page-header">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="../../index.html">
+                            <img src="../../imagenes/logo.jpg" alt="Logo Javier Collado Vinagre" class="logo-img">
+                            JAVIER COLLADO VINAGRE
+                        </a>
+                    </div>
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="../../index.html">INICIO</a></li>
+                        <li><a href="../../index.html#sobre-mi">SOBRE MÍ</a></li>
+                        <li class="dropdown">
+                            <a href="#proyectos">PROYECTOS <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="desarrollo_web.html">Desarrollo Web</a></li>
+                                <li><a href="aplicaciones.html">Aplicaciones</a></li>
+                                <li><a href="videojuegos.html">Videojuegos</a></li>
+                                <li><a href="proyectos_futuros.html" class="active">Proyectos Futuros</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../habilidades/habilidades.html">HABILIDADES</a></li>
+                        <li><a href="../../documentos/cv.pdf" target="_blank">CV</a></li>
+                        <li><a href="https://javier-collado-vinagre.blogspot.com" target="_blank">BLOG</a></li>
+                        <li><a href="../../index.html#contacto">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="projects-hero">
+            <div class="container">
+                <h1>Proyectos Futuros</h1>
+                <p>Ideas y planes para próximos desarrollos</p>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Próximos Proyectos</h2>
+
+                <div class="projects-grid">
+                    <!-- Destrox Pair Quest -->
+                    <div class="project-card" data-category="futuros">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-mobile-alt" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <div class="project-content">
+                            <h2>Destrox Pair Quest</h2>
+                            <p>Aplicación móvil de memoria con sistema de usuarios y categorías temáticas de anime y
+                                videojuegos.</p>
+
+                            <!-- Resumen oculto que se mostrará al hacer clic -->
+                            <div class="resumen-oculto" id="resumen-destrox">
+                                <p><strong>Características Principales:</strong></p>
+                                <ul>
+                                    <li><strong>Sistema de Usuarios Avanzado:</strong> Autenticación con métodos
+                                        tradicionales y proveedores externos (Google, Facebook, GitHub), con sistema de
+                                        recuperación de contraseñas y nombres de usuario.</li>
+                                    <li><strong>Categorías Temáticas Inmersivas:</strong> Anime (Pokemon, Demon Slayer,
+                                        Jujutsu Kaisen, Dragon Ball) y Videojuegos (Fortnite, Minecraft, Need for Speed,
+                                        Call of Duty).</li>
+                                    <li><strong>Progresión Estructurada:</strong> Sistema de dificultad progresiva con
+                                        curva de aprendizaje natural.</li>
+                                    <li><strong>Experiencia de Juego Optimizada:</strong> Temporizadores intuitivos,
+                                        transiciones suaves y feedback inmediato.</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech">
+                                <span>Android</span>
+                                <span>Kotlin</span>
+                                <span>XML</span>
+                                <span>Firebase</span>
+                                <span>Lazygrid</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-lightbulb"></i> En Desarrollo
+                                </a>
+                                <a href="#resumen-destrox" class="btn btn-resumen"
+                                    onclick="toggleResumen('resumen-destrox')">
+                                    <i class="fas fa-file-alt"></i> Resumen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Assistant -->
+                    <div class="project-card" data-category="futuros" style="display: none;">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #f093fb, #f5576c); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-robot" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <div class="project-content">
+                            <h2>AI Assistant</h2>
+                            <p>Asistente virtual inteligente con capacidades de procesamiento de lenguaje natural.</p>
+
+                            <!-- Resumen oculto para AI Assistant -->
+                            <div class="resumen-oculto" id="resumen-ai">
+                                <p><strong>Características Principales:</strong></p>
+                                <ul>
+                                    <li><strong>Procesamiento de Lenguaje Natural:</strong> Comprensión avanzada de
+                                        comandos de voz y texto.</li>
+                                    <li><strong>Integración Multiplataforma:</strong> Compatible con dispositivos
+                                        móviles y desktop.</li>
+                                    <li><strong>Automatización Inteligente:</strong> Capacidad para realizar tareas
+                                        automáticas basadas en patrones.</li>
+                                    <li><strong>API de Servicios Externos:</strong> Integración con calendarios, clima,
+                                        noticias y más.</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>OpenAI API</span>
+                                <span>FastAPI</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-lightbulb"></i> En Investigación
+                                </a>
+                                <a href="#resumen-ai" class="btn btn-resumen" onclick="toggleResumen('resumen-ai')">
+                                    <i class="fas fa-file-alt"></i> Resumen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Game -->
+                    <div class="project-card" data-category="futuros" style="display: none;">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #4facfe, #00f2fe); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-gamepad" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <div class="project-content">
+                            <h2>Mobile Adventure Game</h2>
+                            <p>Juego móvil de aventuras con gráficos 3D y multijugador online.</p>
+
+                            <!-- Resumen oculto para Mobile Game -->
+                            <div class="resumen-oculto" id="resumen-mobilegame">
+                                <p><strong>Características Principales:</strong></p>
+                                <ul>
+                                    <li><strong>Gráficos 3D Avanzados:</strong> Motor gráfico optimizado para
+                                        dispositivos móviles.</li>
+                                    <li><strong>Multijugador Online:</strong> Sistema de partidas en tiempo real con
+                                        jugadores worldwide.</li>
+                                    <li><strong>Mundo Abierto:</strong> Exploración libre en entornos expansivos y
+                                        dinámicos.</li>
+                                    <li><strong>Progresión de Personaje:</strong> Sistema de niveles, habilidades y
+                                        personalización.</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech">
+                                <span>Unity</span>
+                                <span>C#</span>
+                                <span>Photon</span>
+                                <span>Blender</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-lightbulb"></i> En Diseño
+                                </a>
+                                <a href="#resumen-mobilegame" class="btn btn-resumen"
+                                    onclick="toggleResumen('resumen-mobilegame')">
+                                    <i class="fas fa-file-alt"></i> Resumen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IoT Home System -->
+                    <div class="project-card" data-category="futuros" style="display: none;">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #a8edea, #fed6e3); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-home" style="font-size: 3rem; color: #2c3e50;"></i>
+                        </div>
+                        <div class="project-content">
+                            <h2>IoT Home System</h2>
+                            <p>Sistema de domótica inteligente para automatización del hogar.</p>
+
+                            <!-- Resumen oculto para IoT -->
+                            <div class="resumen-oculto" id="resumen-iot">
+                                <p><strong>Características Principales:</strong></p>
+                                <ul>
+                                    <li><strong>Control Centralizado:</strong> Gestión unificada de todos los
+                                        dispositivos inteligentes.</li>
+                                    <li><strong>Automatización por Escenarios:</strong> Configuración de rutinas
+                                        automáticas basadas en horarios y sensores.</li>
+                                    <li><strong>Seguridad Integrada:</strong> Sistema de alarmas y monitorización en
+                                        tiempo real.</li>
+                                    <li><strong>Eficiencia Energética:</strong> Optimización del consumo eléctrico y
+                                        detección de anomalías.</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Raspberry Pi</span>
+                                <span>MQTT</span>
+                                <span>React Native</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-lightbulb"></i> En Prototipo
+                                </a>
+                                <a href="#resumen-iot" class="btn btn-resumen" onclick="toggleResumen('resumen-iot')">
+                                    <i class="fas fa-file-alt"></i> Resumen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="social-links">
+                    <a href="https://github.com/javy016" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/javier-collado-vinagre" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">© 2025 Javier Collado Vinagre. Todos los derechos reservados.</p>
+                <p class="author">Desarrollado con ❤️ por Javier Collado Vinagre</p>
+            </div>
+        </footer>
+
+        <!-- Script para funcionalidades -->
+        <script>
+            // Función para mostrar/ocultar resumen
+            function toggleResumen(resumenId) {
+                event.preventDefault();
+                const resumen = document.getElementById(resumenId);
+                resumen.classList.toggle('mostrar');
+
+                // Scroll suave al resumen
+                if (resumen.classList.contains('mostrar')) {
+                    resumen.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                }
+            }
+
+            // Menú móvil
+            document.addEventListener('DOMContentLoaded', function () {
+                const mobileMenu = document.getElementById('mobile-menu');
+                const navLinks = document.getElementById('nav-links');
+
+                if (mobileMenu && navLinks) {
+                    mobileMenu.addEventListener('click', function () {
+                        navLinks.classList.toggle('active');
+                        this.classList.toggle('active');
+                    });
+                }
+
+                // Cerrar menú al hacer clic en enlaces
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (navLinks && mobileMenu) {
+                            navLinks.classList.remove('active');
+                            mobileMenu.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+
+</html>

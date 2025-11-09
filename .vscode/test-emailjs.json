@@ -1,0 +1,39 @@
+{
+  "emailjs": {
+    "serviceId": "service_yfwbc3b",
+    "templateId": "template_1oz7drd",
+    "publicKey": "EwcvqYIwHotXKgS_S",
+    "userId": "EwcvqYIwHotXKgS_S"
+  },
+  "templateFields": {
+    "from_name": "Nombre de prueba",
+    "from_email": "test@example.com",
+    "from_phone": "+1234567890",
+    "subject": "Test desde JSON",
+    "message": "Este es un mensaje de prueba",
+    "to_email": "jcolladovinagre@gmail.com",
+    "reply_to": "test@example.com"
+  },
+  "testScenarios": [
+    {
+      "name": "Caso exitoso",
+      "data": {
+        "from_name": "Javier Collado",
+        "from_email": "jcolladovinagre@gmail.com",
+        "from_phone": "+34666555444",
+        "subject": "Prueba de contacto",
+        "message": "Hola, esto es una prueba del formulario"
+      },
+      "expected": "success"
+    },
+    {
+      "name": "Falta email",
+      "data": {
+        "from_name": "Javier Collado",
+        "from_phone": "+34666555444",
+        "message": "Mensaje sin email"
+      },
+      "expected": "error"
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Javier Collado Vinagre - Programador Full Stack</title>
+        <meta name="description"
+            content="Javier Collado Vinagre - Programador Full Stack especializado en Java, Spring Boot, React y sistemas microinformáticos" />
+        <meta name="keywords"
+            content="programador, full stack, java, spring boot, react, desarrollo web, sistemas microinformáticos" />
+        <link rel="icon" type="image/jpg" href="imagenes/logo.jpg" />
+
+        <!-- Optimizaciones de rendimiento -->
+        <link rel="preload" href="styles.css" as="style" />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <!-- Encabezado y navegación -->
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="imagenes/logo.jpg" alt="Logo Javier Collado Vinagre" class="logo-img" width="50"
+                            height="50" />
+                        JAVIER COLLADO VINAGRE
+                    </div>
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="#inicio">INICIO</a></li>
+                        <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+                        <li class="dropdown">
+                            <a href="#proyectos">PROYECTOS <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="webs/proyectos/desarrollo_web.html" data-category="web">Desarrollo Web</a>
+                                </li>
+                                <li>
+                                    <a href="webs/proyectos/aplicaciones.html" data-category="apps">Aplicaciones</a>
+                                </li>
+                                <li>
+                                    <a href="webs/proyectos/proyectos_futuros.html" data-category="futuros">Proyectos
+                                        Futuros</a>
+                                </li>
+                                <li>
+                                    <a href="webs/proyectos/videojuegos.html"
+                                        data-category="videojuegos">Videojuegos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="webs/habilidades/habilidades.html">HABILIDADES</a></li>
+                        <li><a href="documentos/cv.pdf" target="_blank">CV</a></li>
+                        <li>
+                            <a href="https://javier-collado-vinagre.blogspot.com" target="_blank">BLOG</a>
+                        </li>
+                        <li><a href="#contacto">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Sección principal -->
+        <section class="hero" id="inicio">
+            <div class="container">
+                <h1>JAVIER COLLADO VINAGRE</h1>
+                <h2>PROGRAMADOR FULL STACK & TÉCNICO EN SISTEMAS</h2>
+                <p>
+                    Desarrollador con experiencia en
+                    <span class="highlight">Java, Spring Boot, React</span> y
+                    conocimientos en
+                    <span class="highlight">sistemas microinformáticos</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#sobre-mi" class="btn-primary">Conóceme Mejor</a>
+                    <a href="#proyectos" class="btn-secondary">Ver Proyectos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section class="about" id="sobre-mi">
+            <div class="container">
+                <h2 class="section-title">SOBRE MÍ</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="about-header">
+                            <h3>Javier Collado Vinagre</h3>
+                            <p class="subtitle">
+                                Programador Full Stack & Técnico en Sistemas
+                            </p>
+                        </div>
+
+                        <div class="about-grid">
+                            <div class="about-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h4>Formación Académica</h4>
+                                <ul>
+                                    <li>
+                                        🎓 Certificado en Operación de Sistemas Informáticos (Novis
+                                        Formación)
+                                    </li>
+                                    <li>
+                                        📚 FP Medio en Sistemas Microinformáticos y Redes (I.E.S.O
+                                        Los Barruecos)
+                                    </li>
+                                    <li>
+                                        💻 FP Básico en Auxiliar Administrativo (I.E.S.O Luis de
+                                        Morales)
+                                    </li>
+                                    <li>📝 Graduado en E.S.O</li>
+                                </ul>
+                            </div>
+
+                            <div class="about-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <h4>Experiencia Profesional</h4>
+                                <ul>
+                                    <li>🚀 Programador Full Stack - Proyecto Tandem Reina</li>
+                                    <li>🔧 Prácticas en Novis Formación</li>
+                                    <li>🖥️ Prácticas en Mancomunidad Tajo Salor</li>
+                                    <li>
+                                        📊 Prácticas en Biblioteca Municipal de Arroyo de La Luz
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="skills-highlight">
+                            <h4>Tecnologías Principales</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Sistemas Operativos</span>
+                                <span class="tech-tag">Github</span>
+                            </div>
+                        </div>
+
+                        <div class="about-passion">
+                            <h4>Mi Objetivo Profesional</h4>
+                            <p>
+                                Soy un profesional joven y motivado con formación técnica y
+                                experiencia en desarrollo de software y administración de
+                                sistemas. Busco oportunidades para seguir desarrollándme
+                                profesionalmente en el ámbito de la tecnología, aportando mi
+                                capacidad de aprendizaje rápido, adaptabilidad y compromiso con
+                                los resultados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="imagenes/logo1.jpg" alt="Javier Collado Vinagre" class="profile-img" width="400"
+                            height="400" />
+                        <!-- Imagen perfil -->
+                        <div class="info-box">
+                            <h4>Información Personal</h4>
+                            <div class="personal-details">
+                                <p><i class="fas fa-birthday-cake"></i> 22 años</p>
+                                <p><i class="fas fa-envelope"></i> jcolladovinagre@gmail.com</p>
+                                <p>
+                                    <i class="fas fa-car"></i> Carnet de conducir y vehículo
+                                    propio
+                                </p>
+                                <p><i class="fas fa-clock"></i> Disponibilidad total</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de proyectos -->
+        <section class="projects" id="proyectos">
+            <div class="container">
+                <h2 class="section-title">MIS PROYECTOS</h2>
+
+                <!-- Filtros de categorías -->
+                <div class="projects-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+                    <button class="filter-btn" data-filter="apps">Aplicaciones</button>
+                    <button class="filter-btn" data-filter="videojuegos">Videojuegos</button>
+                    <button class="filter-btn" data-filter="futuros">Proyectos Futuros</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Proyecto Galería de Imágenes -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-img">
+                            <img src="imagenes/p_galeria.png" alt="Galería de Imágenes" class="project-image"
+                                loading="lazy" width="400" height="250" />
+                            <div class="project-overlay">
+                                <span class="project-category">Desarrollo Web</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Galería de Imágenes</h3>
+                            <p>
+                                Plataforma web interactiva para visualización y gestión de
+                                galerías de imágenes con filtros y búsqueda avanzada.
+                            </p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>HTML/CSS</span>
+                            </div>
+                            <a href="https://javy016.github.io/hosting" target="_blank" class="project-link">Ir al Sitio
+                                →</a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Desarrollo Web -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-img">
+                            <img src="imagenes/p_portafolios.jpg" alt="Portfolio Personal" class="project-image"
+                                loading="lazy" width="400" height="250" />
+                            <div class="project-overlay">
+                                <span class="project-category">Desarrollo Web</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Personal</h3>
+                            <p>
+                                Desarrollo de sitio web personal responsive con diseño moderno y
+                                optimizado para SEO.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5/CSS3</span>
+                                <span>Node.js</span>
+                                <span>CORS</span>
+                                <span>EmailJS</span>
+                                <span>JavaScript</span>
+                                <span>Express.js</span>
+                            </div>
+                            <a href="index.html" class="project-link">Ir al Sitio →</a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Tandem Reina -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-img">
+                            <img src="imagenes/p_tadem_reina.jpg" alt="Tandem Reina" class="project-image"
+                                loading="lazy" width="400" height="250" />
+                            <div class="project-overlay">
+                                <span class="project-category">Desarrollo Web</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Tandem Reina</h3>
+                            <p>
+                                Plataforma de acompañamiento para personas mayores desarrollada
+                                con Java Spring Boot.
+                            </p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                                <span>HTML5/CSS3</span>
+                                <span>Node</span>
+                                <span>React</span>
+                            </div>
+                            <a href="https://asociacionapolo.es/proyecto-reina" class="project-link">Ir al Sitio →</a>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- Proyecto Futuro -->
+                    <div class="project-card" data-category="futuros">
+                        <div class="project-img">
+                            <i class="fas fa-rocket"></i>
+                            <div class="project-overlay">
+                                <span class="project-category">Proyectos Futuros</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Destrox Pair Quest</h3>
+                            <p>
+                                Aplicación móvil de memoria con sistema de usuarios y categorías temáticas de anime y
+                                videojuegos.
+                            </p>
+                            <div class="project-tech">
+                                <span>Android</span>
+                                <span>Kotlin</span>
+                                <span>Firebase</span>
+                            </div>
+                            <a href="webs/proyectos/proyectos_futuros.html" class="project-link">Ver detalles →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de habilidades resumen -->
+        <section class="skills" id="habilidades">
+            <div class="container">
+                <h2 class="section-title">HABILIDADES DESTACADAS</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Programación</h3>
+                        <ul class="skill-list">
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>HTML5 & CSS3</li>
+                            <li>SQL</li>
+                            <li>Spring Boot</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Sistemas</h3>
+                        <ul class="skill-list">
+                            <li>Instalación de SO</li>
+                            <li>Mantenimiento de Equipos</li>
+                            <li>Redes y Cableado</li>
+                            <li>Docker</li>
+                            <li>Ciberseguridad Básica</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Profesionales</h3>
+                        <ul class="skill-list">
+                            <li>Gestión de Equipos</li>
+                            <li>Resolución de Problemas</li>
+                            <li>Atención al Cliente</li>
+                            <li>Trabajo Cooperativo</li>
+                            <li>Paquete Office</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills-cta">
+                    <a href="webs/habilidades/habilidades.html" class="btn-secondary">Ver Todas las Habilidades</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <h2>Contáctame</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="from_name" placeholder=" " required>
+                        <label for="name">👤 Tu Nombre</label>
+                        <div class="validation-message">Por favor ingresa tu nombre</div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="from_email" placeholder=" " required>
+                        <label for="email">📧 Email de Contacto</label>
+                        <div class="validation-message">Por favor ingresa un email válido</div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder=" " required>
+                        <label for="subject">🎯 Asunto del Mensaje</label>
+                        <div class="validation-message">Por favor ingresa el asunto</div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">💬 Tu Mensaje</label>
+                        <div class="validation-message">Por favor escribe tu mensaje</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">🚀 Enviar Mensaje</span>
+                        <span class="btn-loading" style="display: none">
+                            <i class="fas fa-spinner fa-spin"></i> Enviando...
+                        </span>
+                    </button>
+                </form>
+
+                <div id="form-message" class="form-message"></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="social-links">
+                    <a href="https://github.com/javy016" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/javier-collado-vinagre-01433b37b" target="_blank"
+                        title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <p class="copyright">
+                    © 2025 Javier Collado Vinagre. Todos los derechos reservados.
+                </p>
+                <p class="author">Desarrollado con ❤️ por Javier Collado Vinagre</p>
+            </div>
+        </footer>
+
+        <!-- ✅ SCRIPTS CRUCIALES - AGREGAR ESTO -->
+        <!-- EmailJS SDK -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="scripts.js"></script>
+
+        <!-- Script para filtros de proyectos -->
+        <script>
+            // Filtrado de proyectos
+            document.addEventListener('DOMContentLoaded', function () {
+                const filterButtons = document.querySelectorAll('.filter-btn');
+                const projectCards = document.querySelectorAll('.project-card');
+
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', function () {
+                        // Remover clase active de todos los botones
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        // Agregar clase active al botón clickeado
+                        this.classList.add('active');
+
+                        const filterValue = this.getAttribute('data-filter');
+
+                        projectCards.forEach(card => {
+                            if (filterValue === 'all') {
+                                card.style.display = 'block';
+                                card.style.animation = 'fadeInUp 0.6s ease';
+                            } else {
+                                if (card.getAttribute('data-category') === filterValue) {
+                                    card.style.display = 'block';
+                                    card.style.animation = 'fadeInUp 0.6s ease';
+                                } else {
+                                    card.style.display = 'none';
+                                }
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
+    </body>
+
+</html>

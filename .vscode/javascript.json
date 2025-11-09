@@ -1,0 +1,21 @@
+{
+  "EmailJS Send Template": {
+    "prefix": "emailjs-send",
+    "body": [
+      "emailjs.send('${1:service_id}', '${2:template_id}', {",
+      "  from_name: '${3:name}',",
+      "  from_email: '${4:email}',",
+      "  message: '${5:message}',",
+      "  subject: '${6:subject}',",
+      "  reply_to: '${7:email}'",
+      "}).then((response) => {",
+      "  console.log('Email enviado:', response);",
+      "  showNotification('Correo enviado correctamente', 'green');",
+      "}, (error) => {",
+      "  console.error('Error:', error);",
+      "  showNotification('Error al enviar correo', 'red');",
+      "});"
+    ],
+    "description": "Enviar email con EmailJS"
+  }
+}

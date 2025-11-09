@@ -1,0 +1,619 @@
+/* Habilidades Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #ecf0f1;
+    background: #0f1419;
+    padding-top: 70px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.page-header {
+    background: rgba(15, 20, 25, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #2a3a4a;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #3498db;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #bdc3c7;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #3498db;
+    background: rgba(52, 152, 219, 0.1);
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1a252f;
+    border: 1px solid #2a3a4a;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    min-width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.7rem 1.2rem;
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 0;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(52, 152, 219, 0.1);
+    color: #3498db;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 2px;
+    background: #ecf0f1;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.skills-hero {
+    background: linear-gradient(135deg, #1a1f2e 0%, #2d3746 100%);
+    color: #ecf0f1;
+    padding: 80px 0 60px;
+    text-align: center;
+    border-bottom: 1px solid #2a3a4a;
+}
+
+.skills-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.skills-hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #95a5a6;
+}
+
+/* Habilidades Técnicas */
+.technical-skills {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #ecf0f1;
+}
+
+.skills-category {
+    margin-bottom: 3rem;
+}
+
+.skills-category h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: #3498db;
+    border-left: 3px solid #3498db;
+    padding-left: 1rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-item {
+    background: #2c3e50;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #34495e;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    border-color: #3498db;
+    transform: translateY(-3px);
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.skill-header h4 {
+    font-size: 1.1rem;
+    color: #ecf0f1;
+    margin: 0;
+}
+
+.skill-level {
+    background: #34495e;
+    color: #bdc3c7;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.skill-item p {
+    color: #bdc3c7;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.skill-progress {
+    background: #34495e;
+    border-radius: 10px;
+    height: 6px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+/* Habilidades Profesionales */
+.soft-skills {
+    padding: 60px 0;
+    background: #1a252f;
+}
+
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.soft-skill-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: #2c3e50;
+    border-radius: 8px;
+    border: 1px solid #34495e;
+    transition: all 0.3s ease;
+}
+
+.soft-skill-card:hover {
+    border-color: #3498db;
+    transform: translateY(-3px);
+}
+
+.soft-skill-icon {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.soft-skill-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #ecf0f1;
+}
+
+.soft-skill-card p {
+    color: #bdc3c7;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+/* ===== TITULACIÓN NO ACADÉMICA ===== */
+.non-academic-certifications {
+    padding: 60px 0;
+    background: #1a252f;
+}
+
+.non-academic-certifications .section-title {
+    margin-bottom: 3rem;
+}
+
+.non-academic-list {
+    display: grid;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.non-academic-item {
+    background: #2c3e50;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #34495e;
+    transition: all 0.3s ease;
+    border-left: 3px solid #e74c3c;
+}
+
+.non-academic-item:hover {
+    border-color: #e74c3c;
+    transform: translateX(5px);
+}
+
+.non-academic-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+}
+
+.non-academic-entity {
+    font-weight: 600;
+    color: #e74c3c;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.non-academic-date {
+    color: #95a5a6;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.non-academic-actions {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #34495e;
+}
+
+.btn-pdf {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #e74c3c;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid #c0392b;
+}
+
+.btn-pdf:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+.btn-pdf i {
+    font-size: 0.9rem;
+}
+
+/* Certificaciones Académicas */
+.certifications {
+    padding: 60px 0;
+}
+
+.certifications-list {
+    display: grid;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.certification-item {
+    background: #2c3e50;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #34495e;
+    transition: all 0.3s ease;
+    border-left: 3px solid #3498db;
+}
+
+.certification-item:hover {
+    border-color: #3498db;
+    transform: translateX(5px);
+}
+
+.certification-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+}
+
+.certification-entity {
+    font-weight: 600;
+    color: #3498db;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.certification-date {
+    color: #95a5a6;
+    font-size: 0.8rem;
+}
+
+/* Footer */
+footer {
+    background: #0f1419;
+    color: #bdc3c7;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #2a3a4a;
+    margin-top: 4rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    color: #bdc3c7;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    padding: 0.8rem;
+    border-radius: 50%;
+    background: #1a252f;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.copyright {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.author {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: #1a252f;
+        flex-direction: column;
+        padding: 1.5rem;
+        transition: 0.3s;
+        border-top: 1px solid #2a3a4a;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        background: transparent;
+        border: none;
+        padding-left: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .skills-hero h1 {
+        font-size: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .soft-skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .non-academic-list,
+    .certifications-list {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-hero {
+        padding: 60px 0 40px;
+    }
+
+    .skills-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .non-academic-item,
+    .certification-item {
+        padding: 1.2rem;
+    }
+
+    .btn-pdf {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* ... (todo el CSS anterior se mantiene igual) ... */
+
+    /* ===== MODALIDAD TAGS ===== */
+    .certification-meta {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .modalidad-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.3rem 0.8rem;
+        border-radius: 15px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .modalidad-presencial {
+        background: rgba(52, 152, 219, 0.2);
+        color: #3498db;
+        border: 1px solid #3498db;
+    }
+
+    .modalidad-online {
+        background: rgba(46, 204, 113, 0.2);
+        color: #2ecc71;
+        border: 1px solid #2ecc71;
+    }
+
+    .modalidad-hibrido {
+        background: rgba(155, 89, 182, 0.2);
+        color: #9b59b6;
+        border: 1px solid #9b59b6;
+    }
+
+    .modalidad-tag i {
+        font-size: 0.7rem;
+    }
+
+    /* Ajustes para certificaciones académicas */
+    .certification-item .certification-meta {
+        margin-bottom: 0;
+    }
+
+    .certification-item .certification-date {
+        margin-bottom: 0;
+        background: #34495e;
+        padding: 0.3rem 0.8rem;
+        border-radius: 12px;
+        color: #95a5a6;
+    }
+
+    /* Ajustes para titulación no académica */
+    .non-academic-item .certification-meta {
+        margin-bottom: 1rem;
+    }
+
+    .non-academic-item .non-academic-date {
+        margin-bottom: 0;
+        background: #34495e;
+        padding: 0.3rem 0.8rem;
+        border-radius: 12px;
+        color: #95a5a6;
+    }
+
+    /* Responsive para modalidad tags */
+    @media (max-width: 480px) {
+        .certification-meta {
+            gap: 0.5rem;
+        }
+
+        .modalidad-tag {
+            font-size: 0.7rem;
+            padding: 0.25rem 0.6rem;
+        }
+    }
+}

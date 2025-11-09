@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aplicaciones - Javier Collado Vinagre</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="proyectos.css">
+        <link rel="icon" type="image/jpg" href="imagenes/logo.jpg">
+    </head>
+
+    <body>
+        <header class="page-header">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="../../index.html">
+                            <img src="../../imagenes/logo.jpg" alt="Logo Javier Collado Vinagre" class="logo-img">
+                            JAVIER COLLADO VINAGRE
+                        </a>
+                    </div>
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="../../index.html">INICIO</a></li>
+                        <li><a href="../../index.html#sobre-mi">SOBRE MÍ</a></li>
+                        <li class="dropdown">
+                            <a href="#proyectos">PROYECTOS <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="desarrollo_web.html">Desarrollo Web</a></li>
+                                <li><a href="aplicaciones.html" class="active">Aplicaciones</a></li>
+                                <li><a href="videojuegos.html">Videojuegos</a></li>
+                                <li><a href="proyectos_futuros.html">Proyectos Futuros</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../habilidades/habilidades.html">HABILIDADES</a></li>
+                        <li><a href="../../documentos/cv.pdf" target="_blank">CV</a></li>
+                        <li><a href="https://javier-collado-vinagre.blogspot.com" target="_blank">BLOG</a></li>
+                        <li><a href="../../index.html#contacto">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="projects-hero">
+            <div class="container">
+                <h1>Aplicaciones</h1>
+                <p>Desarrollo de aplicaciones móviles y de escritorio</p>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Aplicaciones Desarrolladas</h2>
+
+                <div class="projects-grid">
+                    <!-- App Gestión Tareas -->
+                    <div class="project-card" data-category="apps" style="display: none;">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #4facfe, #00f2fe); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-tasks" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <div class="project-content">
+                            <h2>App Gestión Tareas</h2>
+                            <p>Aplicación móvil para gestión de tareas con sincronización en la nube y notificaciones
+                                inteligentes.</p>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>Firebase</span>
+                                <span>Redux</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> Descargar
+                                </a>
+                                <a href="#resumen-tareas" class="btn btn-resumen">
+                                    <i class="fas fa-file-alt"></i> Resumen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weather App -->
+                    <div class="project-card" data-category="apps" style="display: none;">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #a8edea, #fed6e3); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-cloud-sun" style="font-size: 3rem; color: #2c3e50;"></i>
+                        </div>
+                        <div class="project-content">
+                            <h2>Weather App</h2>
+                            <p>Aplicación del clima con pronósticos en tiempo real y alertas meteorológicas
+                                personalizadas.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>API REST</span>
+                                <span>Google Maps</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> Descargar
+                                </a>
+                                <a href="#resumen-weather" class="btn btn-resumen">
+                                    <i class="fas fa-file-alt"></i> Resumen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finance Tracker -->
+                    <div class="project-card" data-category="apps" style="display: none;">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #43e97b, #38f9d7); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-chart-pie" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <div class="project-content">
+                            <h2>Finance Tracker</h2>
+                            <p>Aplicación de seguimiento financiero con análisis de gastos y presupuestos mensuales.</p>
+                            <div class="project-tech">
+                                <span>Swift</span>
+                                <span>iOS</span>
+                                <span>Core Data</span>
+                                <span>Charts</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> Descargar
+                                </a>
+                                <a href="#resumen-finance" class="btn btn-resumen">
+                                    <i class="fas fa-file-alt"></i> Resumen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="social-links">
+                    <a href="https://github.com/javy016" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/javier-collado-vinagre" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">© 2025 Javier Collado Vinagre. Todos los derechos reservados.</p>
+                <p class="author">Desarrollado con ❤️ por Javier Collado Vinagre</p>
+            </div>
+        </footer>
+
+        <!-- Modal de Resumen -->
+        <div class="resumen-modal" id="resumen-modal">
+            <div class="resumen-modal-content">
+                <div class="resumen-modal-header">
+                    <h3>Resumen del Proyecto</h3>
+                    <button class="close-resumen-modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="resumen-modal-body">
+                    <!-- El contenido se genera dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <script src="proyectos_scripts.js"></script>
+    </body>
+
+</html>
