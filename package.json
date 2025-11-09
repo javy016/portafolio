@@ -4,16 +4,22 @@
   "description": "Portfolio profesional de Javier Collado Vinagre",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
     "start": "node server.js",
-    "build": "echo 'Static portfolio - no build process needed'"
+    "dev": "node server.js",
+    "build": "echo 'No build process needed for static portfolio'"
   },
   "dependencies": {
-    "express": "^4.18.0"
+    "express": "^4.18.0",
+    "cors": "^2.8.5"
   },
   "engines": {
     "node": "18.x"
   },
+  "keywords": [
+    "portfolio",
+    "contact",
+    "emailjs"
+  ],
   "author": "Javier Collado Vinagre",
   "license": "MIT"
 }
