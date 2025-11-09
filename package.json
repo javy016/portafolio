@@ -1,27 +1,19 @@
 {
-    "name": "portfolio-server",
-    "version": "1.0.0",
-    "description": "Servidor portfolio con formulario de contacto",
-    "main": "server.js",
-    "scripts": {
-        "start": "node server.js",
-        "dev": "nodemon server.js"
-    },
-    "dependencies": {
-        "express": "^4.18.2",
-        "cors": "^2.8.5",
-        "multer": "^1.4.5-lts.1",
-        "nodemailer": "^6.9.7",
-        "dotenv": "^16.3.1"
-    },
-    "devDependencies": {
-        "nodemon": "^3.0.1"
-    },
-    "keywords": [
-        "portfolio",
-        "contact",
-        "email"
-    ],
-    "author": "Javier Collado",
-    "license": "MIT"
+  "name": "portfolio-javier-collado",
+  "version": "1.0.0",
+  "description": "Portfolio profesional de Javier Collado Vinagre",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'Static portfolio - no build process needed'"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "author": "Javier Collado Vinagre",
+  "license": "MIT"
 }
